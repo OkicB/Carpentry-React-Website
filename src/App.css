@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(8, 212, 185);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(2, 151, 170);
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/*************** NAVBAR ***************/
+.navbarFirst {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgb(156, 153, 153);
+}
+
+.imgLogo {
+}
+
+/*************** MENU LINKS ***************/
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+#navbarNav {
+  float: right;
+  justify-content: flex-end;
+}
+
+.navbar-nav > li > a {
+  margin-right: 2rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-blue);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-blue);
+  transition: 0.4s ease-in-out;
+  border-radius: 50px;
+}
+
+/*************** HEADER ***************/
+
+.home-area {
+  width: 100%;
+}
+
+.row1 {
+  background: url("./1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 35rem;
+  margin-right: 0;
+}
+
+@media (max-width: 765px) {
+  .row1 {
+    height: 10rem;
+    width: 100% !important;
+  }
+}
+
+.row {
+  width: 100%;
+}
+
+.rowStyle1 {
+  background: #313131;
+}
+
+.box-1-section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background: #282828;
+  height: 35rem;
+}
+
+h1,
+h3 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.pvc-title {
+  margin-left: 2rem !important;
+  width: 15rem;
+}
+
+.pvc-title h1 {
+  padding-bottom: 2rem;
+  font-size: 60px !important;
+  font-weight: 600;
+}
+
+.rowButton {
+  width: 11rem;
+  margin-left: 2rem !important;
+  padding-top: 2rem;
+}
+
+.rowButton button {
+  padding: 0.8rem 0;
+}
+
+.home-text-section {
+  padding-left: 10rem;
+}
+
+.home-text {
+  font-size: 1rem;
+  padding-left: 5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+}
+
+.slide-box {
+  margin: 2rem 6rem !important;
+  height: 5rem;
+  width: 10rem;
+  background: rgb(0, 255, 255);
+  box-shadow: 40px 30px 20px rgb(0 0 0 / 25%);
+  padding: 1rem !important;
+  justify-content: center;
+}
+
+.slide-box a {
+  border: 2px solid rgb(16, 66, 233);
+  border-radius: 50%;
+  width: 3rem !important;
+  height: 3rem !important;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.arrowRight {
+  margin-left: 0.9rem;
+}
+
+.box-5 {
+  background: #282828;
+  height: 9rem;
+  padding: 2.5rem 0;
+}
+
+.bottom-text {
+  display: inline;
+}
+
+h4 {
+  margin-left: 2rem;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  color: #636363;
+}
+
+.para1 {
+  float: right;
+  margin-right: 3rem;
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+.p1 {
+  color: rgb(0, 255, 255);
+}
+
+.p2 {
+  color: rgb(255, 255, 255);
+}
+
+/*************** ABOUT ***************/
+.about-area {
+  background: #dbdbdb;
+  padding: 100px 0;
+  color: rgb(0, 0, 0);
+}
+
+.aboutTitle {
+  padding-top: 2.5rem;
+}
+
+.aboutTitle h1 {
+  color: black !important;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.aboutTitle span {
+  background: #baff00;
+  padding: 0 10px;
+  color: #222222;
+  display: inline-block;
+}
+
+.aboutText {
+  margin-top: 30px;
+}
+
+.aboutText h3 {
+  color: black !important;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.aboutText p {
+  margin-top: 20px;
+  margin-bottom: 4rem;
+  width: 30rem;
+}
+
+.btnAbout {
+  color: black;
+  display: inline-block;
+  font-weight: 700;
+  border: 4px solid;
+  min-width: 200px;
+  text-align: center;
+  padding: 19px 0;
+  position: relative;
+  background-color: transparent;
+  margin-right: 15px;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+.btnAbout::before {
+  background: #222222;
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 4px;
+  right: -15px;
+  bottom: 18px;
+}
+
+.btnAbout::after {
+  background: #222222;
+  bottom: 8px;
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 4px;
+  right: -15px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.aboutImage img {
+  background-position: center !important;
+  background-repeat: no-repeat, repeat !important;
+  background-size: cover !important;
+  height: 40rem;
+  width: 30rem;
+  position: relative;
+}
+
+.aboutImage {
+  margin-left: 3rem;
+}
+
+/*************** ABOUT ***************/
+.offer-area {
+  background: #f0f0f0;
+  padding: 100px 0;
+  color: rgb(0, 0, 0) !important;
+  justify-content: center;
+  text-align: center;
+}
+
+.offerTitle h6,
+h3 {
+  color: black !important;
+}
+
+.offerTitle p {
+  margin-bottom: 39px;
+}
+
+.offerHeader {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.heading {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.servicesBox {
+  padding: 40px;
+  border: 0.1rem solid #1d1d1d;
+  margin: 20px;
+  position: relative;
+}
+
+.servicesBox:hover {
+  border: 0.1rem solid rgb(10, 149, 214);
+  cursor: pointer;
+}
+
+.servicesBox:hover .commonIcons {
+  transition: all 0.5s;
+  color: rgb(10, 149, 214);
+}
+
+.commonIcons {
+  font-size: 5rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.servicesBoxHeader {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.servicesBoxPara {
+  font-size: 16px;
+  /*color: var(--primary-blue);*/
+}
