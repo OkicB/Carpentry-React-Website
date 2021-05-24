@@ -1,68 +1,77 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight, FaDoorClosed } from 'react-icons/fa';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { AiFillSetting } from 'react-icons/ai';
 import { GiWindow } from 'react-icons/gi';
 import img from '../components/2.jpg';
+import Carousel from "react-elastic-carousel";
+import Popup from './Popup';
+import Modal from 'react-modal';
 
-const Home = () => {
+import img1 from '../components/mašine.jpg';
+import img2 from '../components/proizvodi.jpg';
+import img3 from '../components/ulazna_vrata.jpg';
+import img4 from '../components/ulazna_vrata2.jpg';
+import img5 from '../components/rico_plast.jpg';
+
+import img6 from '../components/sawin.png';
+import img7 from '../components/teknik.png';
+import img8 from '../components/wintech2.png';
+import img9 from '../components/europen.png';
+import img10 from '../components/dalgakiran.png';
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
+];
+
+function Home() {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalIsOpen2, setModalIsOpen2] = useState(false);
+    const [modalIsOpen3, setModalIsOpen3] = useState(false);
+    const [modalIsOpen4, setModalIsOpen4] = useState(false);
+    const [modalIsOpen5, setModalIsOpen5] = useState(false);
+    const handleClose = () => setModalIsOpen(false);
+    const handleClose2 = () => setModalIsOpen2(false);
+    const handleClose3 = () => setModalIsOpen3(false);
+    const handleClose4 = () => setModalIsOpen4(false);
+    const handleClose5 = () => setModalIsOpen5(false);
     return (
         <>
-            <section className="home-area">
-                <div className="containerHome">
-                    <div className="row gx-0 rowStyle1">
-                        <div className="col-md-3 col-sm-6 box-1">
-                            <div className="box-1-section-1">
-                                <div className="intro-box">
-                                    <div className="row gx-0 pvc-title">
-                                        <h1>PVC Stolarija</h1>
-                                    </div>
-                                    <div className="row gx-0 home-text-section">
-                                        <div className="row gx-0">
-                                            <h3 className="home-text">MODERN DESIGN</h3>
-                                        </div>
-                                        <div className="row gx-0">
-                                            <h3 className="home-text">MODERN DESIGN</h3>
-                                        </div>
-                                        <div className="row gx-0">
-                                            <h3 className="home-text">MODERN DESIGN</h3>
-                                        </div>
-                                    </div>
-                                    <div className="row gx-0 rowButton">
-                                        <button type="button" className="btn btn-outline-primary button1">CONTACT US</button>
-                                    </div>
+            <section className="home-area" id="home">
+                <div className="container">
+                    <div className="row gx-0">
+                        <div className="col-md-5 col-sm-6 homeCol">
+                            <div className="border">
+                            <div className="home-content">
+                                <h2>Kvalitet PVC <span className="carpentry-class">Stolarije</span></h2>
+                                <div className="home-button-field">
+                                    <a className="btn button2" href="#">Saznajte više</a>
+                                    <a className="custom-link" href="#">Uvijek smo tu za Vaše Potrebe<HiArrowNarrowRight className="arrowRight" /></a>
                                 </div>
                             </div>
-                            <div className="row gx-0 slide-box">
-                                <a href="/"><FaArrowLeft /></a>
-                                <a className="arrowRight" href="/"><FaArrowRight /></a>
-                            </div>
-                        </div>
-                        <div className="col-md-9 col-sm-6 box-2">
-                            <div className="row gx-0 row1"></div>
-                            <div className="row gx-0">
-                                    <div className="col-lg-12 box-5">
-                                        <h4 className="bottom-text">54 + WORKS</h4>
-                                        <p className="bottom-text para1 p1">Živinice, BiH</p>
-                                        <p className="bottom-text para1 p2">061 392 925</p>
-                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
 
             <section className="about-area">
                 <div className="container containerHome">
                     <div className="row gx-0">
                         <div className="col-lg-6 colAbout">
                             <div data-aos="fade-right" className="aboutTitle">
-                                <h6>these are some of my skills</h6>
-                                <h1>Let's work <br /><span>together</span></h1>
+                                <h6>ovo je naš profil</h6>
+                                <h1>Saznajte više <br /><span>o nama</span></h1>
                                 <div className="aboutText">
-                                    <h3>THESE ARE SOME OF MY SKILLS</h3>
-                                    <p>I am creative, helpful and honest person who likes to get involved in various jobs and activities. Currently I study Javascript technologies like React, Node and other tools like Material UI, Express, to build a great web applications and API's for myself and clients. Always in the mood to grow my knowledge that can help further in my job.</p>
+                                    <h3>OVO JE NAŠ PROFIL</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, and scrambled it to make a type specimen book.</p>
                                 </div>
                                 <div>
-                                    <a className="btnAbout" href="/">Hire me now</a>
+                                    <a className="btnAbout" href="/">Naručite proizvod</a>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +91,7 @@ const Home = () => {
                             <div className="offerTitle">
                                 <h6 className="heading">SERVICES</h6>
                                 <h3 className="offerHeader">ŠTA NUDIMO</h3>
-                                <p>Feel free to check my services, You will probably find something interesting for Yourself</p>
+                                <p>Provjerite naše proizvode, vjerovatno ćete naći nešto što Vam odgovara.</p>
                             </div>
                         </div>
                     </div>
@@ -90,31 +99,267 @@ const Home = () => {
                 <div className="container containerHome">
                     <div className="row gx-0 justifyCenter">
                         <div className="col-lg-4 col-md-6 columnServices">
-                            <div className="servicesBox">
-                                <FaDoorClosed className="commonIcons" />
-                                <div className="servicesBoxHeader">PVC MAŠINE</div>
-                                <div className="servicesBoxPara">Brand Your business by ordering a professional logo and business card</div>
+                            <div className="servicesBox" onClick={() => setModalIsOpen(true)}>
+                                <AiFillSetting className="commonIcons" />
+                                <div className="servicesBoxHeader">PVC/ALU MAŠINE CNC</div>
+                                <div className="servicesBoxPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                             </div>
+                            <Modal isOpen={modalIsOpen}>
+                                <button className="modalButton" onClick={handleClose}>X</button>
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
+                                </div>
+
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
+                                </div>
+                            </Modal>
                         </div>
                             
                         <div className="col-lg-4 col-md-6">
-                            <div className="servicesBox">
+                            <div className="servicesBox" onClick={() => setModalIsOpen2(true)}>
                                 <GiWindow className="commonIcons" />
                                 <div className="servicesBoxHeader">PVC STOLARIJA</div>
-                                <div className="servicesBoxPara">Brand Your business by ordering a professional logo and business card</div>
+                                <div className="servicesBoxPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                             </div>
+                            <Modal isOpen={modalIsOpen2}>
+                                <button className="modalButton" onClick={handleClose2}>X</button>
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
+                                </div>
+
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
+                                </div>
+                            </Modal>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
-                            <div className="servicesBox">
+                            <div className="servicesBox" onClick={() => setModalIsOpen3(true)}>
                                 <FaDoorClosed className="commonIcons" />
                                 <div className="servicesBoxHeader">ULAZNA VRATA</div>
-                                <div className="servicesBoxPara">Brand Your business by ordering a professional logo and business card</div>
+                                <div className="servicesBoxPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                            </div>
+                            <Modal isOpen={modalIsOpen3}>
+                                <button className="modalButton" onClick={handleClose3}>X</button>
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
+                                </div>
+
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
+                                </div>
+                            </Modal>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="servicesBox" onClick={() => setModalIsOpen4(true)}>
+                                <FaDoorClosed className="commonIcons" />
+                                <div className="servicesBoxHeader">SOBNA VRATA</div>
+                                <div className="servicesBoxPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                            </div>
+                            <Modal isOpen={modalIsOpen4}>
+                                <button className="modalButton" onClick={handleClose4}>X</button>
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
+                                </div>
+
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
+                                </div>
+                            </Modal>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6">
+                            <div className="servicesBox" onClick={() => setModalIsOpen5(true)}>
+                                <AiFillSetting className="commonIcons " />
+                                <div className="servicesBoxHeader">KOMPRESORI</div>
+                                <div className="servicesBoxPara">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                            </div>
+                            <Modal isOpen={modalIsOpen5}>
+                                <button className="modalButton" onClick={handleClose5}>X</button>
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
+                                </div>
+
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
+                                </div>
+                            </Modal>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="products-area">
+                <div className="container">
+                    <div className="row gx-0 justifyCenter">
+                        <div className="line"></div>
+                    </div>
+                    <div className="row gx-0 justifyCenter">
+                        <div className="col-lg-6">
+                            <div className="offerTitle">
+                                <h6 className="heading">KOMPLETIRANO</h6>
+                                <h3 className="productHeader">Naši proizvodi</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="row gx-0 justifyCenter">
+                        <div className="col-lg-12 col-md-6 columnServices">
+                            <div className="productBox">
+                                <div className="App">
+                                    <Carousel breakPoints={breakPoints}>
+                                        <img className="items item1" src={img1}></img>
+                                        <img className="items" src={img2}></img>
+                                        <img className="items" src={img3}></img>
+                                        <img className="items item4" src={img4}></img>
+                                        <img className="items" src={img5}></img>
+                                    </Carousel>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section className="clients-area">
+                <div className="container">
+                    <div className="row gx-0 justifyCenter">
+                        <div className="col-lg-6">
+                            <div className="offerTitle">
+                                <h6 className="heading">NAŠI KLIJENTI</h6>
+                                <h3 className="productHeader">Kompanije s kojima radimo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row gx-0 justifyCenter">
+                                <div className="col-lg-3 col-md-6 columnClients">
+                                    <div className="clientsBox">
+                                        <a href="#">
+                                            <img className="items1 itemSawin" src={img6}/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6 columnClients">
+                                    <div className="clientsBox">
+                                        <a href="#">
+                                            <img className="items1" src={img7}/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6 columnClients">
+                                    <div className="clientsBox">
+                                        <a href="#">
+                                            <img className="items1 itemWintech" src={img8}/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6 columnClients">
+                                    <div className="clientsBox">
+                                        <a href="#">
+                                            <img className="items1" src={img9}/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6 columnClients">
+                                    <div className="clientsBox">
+                                        <a href="#">
+                                            <img className="items1" src={img10}/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+
+            <section className="form-area">
+                <div className="container">
+                    <div className="row gx-0 justifyCenter">
+                        <div className="col-lg-6">
+                            <div className="offerTitle">
+                                <h6 className="heading">POSJETITE NAS</h6>
+                                <h3 className="productHeader">Kontaktirajte za više informacija</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row gx-0 justifyCenter">
+                        <div className="col-lg-6 col-md-6">
+                            <form className="form">
+                                        <div className="col-md-6 col-sm-6 colInput">
+                                            <input type="text" placeholder="Unesite Ime i Prezime" name="name" className="contactForm" required="true" />
+                                        </div>
+                                        <div className="col-md-6 col-sm-6 colInput">
+                                            <input type="email" placeholder="Unesite Email" name="email" className="contactForm" required="true" />
+                                        </div>
+                                        <div className="col-md-6 col-sm-6 colInput">
+                                            <input type="text" placeholder="Upišite Poruku" name="message" className="contactForm" required="true" />
+                                        </div>
+                                        <div>
+                                            <a className="btnAbout" href="/">Pošalji</a>
+                                        </div>                              
+                            </form>
+                        </div>
+                        <div className="col-lg-5 col-md-6 map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11394.80386282076!2d18.6578459!3d44.4392959!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb181ab963ba7d457!2sRICO%20PLAST%20DOO!5e0!3m2!1sbs!2sba!4v1621430974778!5m2!1sbs!2sba" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer className="footer-area">
+                <div className="container">
+                    <div className="row gx-0 justifyCenter">
+                        <div className="col-lg-4">
+                            <div className="logoFooter">
+                                <a href="#">
+                                    <img className="logo" src={img8}/>
+                                </a>
+                            </div>
+                            <p className="footerText footerText1">Provjerite naše proizvode, vjerovatno ćete naći nešto što Vam odgovara. Poštujemo dogovor, zahtjeve kupca i investitora. Poštujemo rokove, izvodimo radove kvalitetno, koristimo kvalitetne materijale. A, radimo brzo!</p>
+                        </div>
+                        <div className="col-lg-4 linkColumn">
+                            <h6 className="contactText">NAŠE STRANICE</h6>
+                            <ul className="footerList">
+                                <li><a href="#" className="listItem">Početna</a></li>
+                                <li><a href="#" className="listItem">Proizvodi</a></li>
+                                <li><a href="#" className="listItem">O nama</a></li>
+                                <li><a href="#" className="listItem">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-lg-3 linkColumn2">
+                            <h6 className="contactText">KONTAKT INFO</h6>
+                            <div className="textFooterList">
+                                <p className="footerText">Živinice, Bosna i Hercegovina</p>
+                                <p className="footerText">+387 61 111 222</p>
+                                <p className="footerText">rico-plast@gmail.com</p>
+                                <p className="footerText">Facebook</p>
+                                <p className="footerText">Instagram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </>
     )
 }
