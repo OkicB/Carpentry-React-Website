@@ -705,6 +705,83 @@ input {
   letter-spacing: 0.2rem;
 }
 
+/*************** FOOTER ***************/
+.products-page {
+  width: 100%;
+  padding: 100px 0;
+  color: rgb(0, 0, 0);
+  background: url("./1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.productH3 {
+  padding: 10rem 0 4rem 0;
+  font-weight: 800;
+}
+
+.productsList {
+  text-align: center;
+  margin-bottom: 50px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.productItem {
+  display: inline-block;
+  border: 2px solid #dceb0c;
+  background: #dceb0c;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-right: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.productsImg {
+  width: 50%;
+  height: auto;
+}
+
+.hiddenItemContent {
+  height: auto;
+  width: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 30px;
+  transition: all 0.5s ease-in-out;
+  background: rgba(250, 226, 9, 0.7);
+  position: absolute;
+  opacity: 0;
+}
+
+.hiddenItemContent > span {
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 45px 0px 5px 0px;
+  text-align: center;
+}
+
+.hiddenItemContent > h6 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.hiddenItemContent:hover {
+  opacity: 1;
+}
+
+.productItem:hover {
+  background: #292929;
+  color: #dceb0c;
+  transition: all 0.3s;
+  border: 2px solid #292929;
+}
+
 @media (max-width: 765px) {
   .items1 {
     margin-top: 2rem;
