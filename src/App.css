@@ -720,7 +720,125 @@ input {
   font-weight: 800;
 }
 
-.productsList {
+.products-section1 {
+  padding: 100px 0;
+  width: 100%;
+  background: url("./1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.products-section3 {
+  margin-top: 10rem;
+  position: relative;
+  padding: 100px 0 !important;
+}
+
+.columnSectionRight {
+  position: relative;
+}
+
+.products-section2 .container {
+  position: relative;
+}
+
+.productsContent {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  margin-left: 42%;
+}
+
+.products-para {
+  z-index: 100;
+  color: white;
+  font-size: 14px;
+  line-height: 2;
+  padding-right: 3rem;
+  margin-bottom: 30px;
+}
+
+.productsContent h2 {
+  color: white;
+  padding-right: 15rem;
+  font-weight: 600 !important;
+  margin-bottom: 3rem !important;
+  margin-top: 0 !important;
+}
+
+.productsContent span {
+  background: #baff00;
+  padding: 0 10px;
+  color: #222222;
+  display: inline-block;
+  font-weight: 600 !important;
+}
+
+.products-section2 {
+  padding: 100px 0 !important;
+  position: relative;
+}
+
+.square {
+  content: "";
+  position: absolute;
+  width: 67%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: #222222;
+}
+
+.commonIconsProducts {
+  font-size: 5rem;
+  /*color: white;*/
+  color: #baff00;
+}
+
+.productsImg1,
+.productsImg2,
+.productsImg3,
+.productsImg4,
+.productsImg5 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0 !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.productsImg1 {
+  background: url("./components/mašine9.jpg");
+}
+
+.productsImg2 {
+  background: url("./components/roba1.jpg");
+}
+
+.productsImg3 {
+  background: url("./components/ulazna_vrata.jpg");
+}
+
+.productsImg4 {
+  background: url("./components/sobna4.jpg");
+}
+
+.productsImg5 {
+  background: url("./components/kompresori2.jpg");
+}
+
+.productHeader {
+  background: #baff00;
+  padding: 1rem;
+  color: #222222;
+  display: inline-block;
+  font-weight: 800 !important;
+  font-size: 3rem;
+}
+
+/*.productsList {
   text-align: center;
   margin-bottom: 50px;
   list-style: none;
@@ -780,7 +898,7 @@ input {
   color: #dceb0c;
   transition: all 0.3s;
   border: 2px solid #292929;
-}
+}*/
 
 @media (max-width: 765px) {
   .items1 {
