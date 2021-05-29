@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { FaArrowLeft, FaArrowRight, FaDoorClosed } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaArrowLeft, FaArrowRight, FaDoorClosed } from 'react-icons/fa';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { AiFillSetting } from 'react-icons/ai';
 import { GiWindow } from 'react-icons/gi';
 import img1 from '../components/kompresori1.jpg';
+import img8 from '../components/wintech2.png';
 /*import img2 from '../components/kompresori2.jpg';
 import img3 from '../components/kompresori3.jpg';
 import img4 from '../components/kompresori4.jpg';
@@ -141,7 +142,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-            <section className="products-section3">
+            <section className="products-section3 last-productSection">
                 <div className="productsImg5"></div>
                 <div className="square"></div>
                 <div className="container">
@@ -155,6 +156,52 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+            <footer className="footer-area">
+                <div className="container">
+                    <div className="row gx-0 justifyCenter">
+                        <div className="col-lg-4">
+                            <div className="logoFooter">
+                                <a href="#">
+                                    <img className="logo" src={img8}/>
+                                </a>
+                            </div>
+                            <p className="footerText footerText1">Provjerite naše proizvode, vjerovatno ćete naći nešto što Vam odgovara. Poštujemo dogovor, zahtjeve kupca i investitora. Poštujemo rokove, izvodimo radove kvalitetno, koristimo kvalitetne materijale. Radimo brzo!</p>
+                        </div>
+                        <div className="col-lg-4 linkColumn">
+                            <h6 className="contactText">NAŠE STRANICE</h6>
+                            <ul className="footerList">
+                                <li><a href="#" className="listItem">Početna</a></li>
+                                <li><a href="#" className="listItem">Proizvodi</a></li>
+                                <li><a href="#" className="listItem">O nama</a></li>
+                                <li><a href="#" className="listItem">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <div className="col-lg-3 linkColumn2">
+                            <h6 className="contactText">KONTAKT INFO</h6>
+                            <div className="textFooterList">
+                                <p className="footerText">Živinice, Bosna i Hercegovina</p>
+                                <p className="footerText">064 41 74 841</p>
+                                <p className="footerText">061 392 925</p>
+                                <p className="footerText">060 33 96 286</p>
+                                <p className="footerText">rico-plast@gmail.com</p>
+                                <a href="https://www.facebook.com/">
+                                    <FaFacebook className="social-media" />
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <FaInstagram className="social-media" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <section className="copyright-section">
+                    <div className="row gx-0 copyrightRow">
+                        <div className="col-lg-12">
+                            <p className="copyright-text">By Programmer: Bekir Okić</p>
+                        </div>
+                    </div>
             </section>
         </>
     )
