@@ -76,7 +76,7 @@ const Projects = () => {
                 <div className="container">
                     <div className="row gx-0">
                         <div className="headerRow">
-                            <h3 className="productHeader">PROIZVODI</h3>
+                            <h3 className="productHeader2">PROIZVODI</h3>
                         </div>
                     </div>
                 </div>
@@ -85,9 +85,9 @@ const Projects = () => {
             <section className="products-section3">
                 <div className="productsImg1"></div>
                 <div className="square"></div>
-                <div className="container">
+                <div className="container productsContainer">
                     <div className="row gx-0">
-                        <div className="col-lg-7 productsContent">
+                        <div className="col-lg-7 col-sm-6 productsContent">
                             <h2>PVC/ALU <span>mašine</span></h2>
                             <p className="products-para">I am creative, helpful and honest person who likes to get involved in various jobs and activities. Currently I study Javascript technologies like React, Node and other tools like Material UI, Express, to build a great web applications and API's for myself and clients. Always in the mood to grow my knowledge that can help further in my job.</p>
                             <div className="productsIcons">
@@ -185,7 +185,7 @@ const Projects = () => {
                                 <p className="footerText">061 392 925</p>
                                 <p className="footerText">060 33 96 286</p>
                                 <p className="footerText">rico-plast@gmail.com</p>
-                                <a href="https://www.facebook.com/">
+                                <a href="https://www.facebook.com/Rico-plast-106317514411877">
                                     <FaFacebook className="social-media" />
                                 </a>
                                 <a href="https://www.instagram.com/">
