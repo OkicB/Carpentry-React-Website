@@ -48,8 +48,8 @@ function Home() {
                             <div className="home-content">
                                 <h2>Kvalitet PVC <span className="carpentry-class">Stolarije</span></h2>
                                 <div className="home-button-field">
-                                    <a className="btn button2" href="#">Saznajte više</a>
-                                    <a className="custom-link" href="#">Uvijek smo tu za Vaše Potrebe<HiArrowNarrowRight className="arrowRight" /></a>
+                                    <a className="btn button2" href="#about-section">Saznajte više</a>
+                                    <a className="custom-link" href="#offer-section">Uvijek smo tu za Vaše Potrebe<HiArrowNarrowRight className="arrowRight" /></a>
                                 </div>
                             </div>
                             </div>
@@ -59,7 +59,7 @@ function Home() {
             </section>
             
 
-            <section className="about-area">
+            <section className="about-area" id="about-section">
                 <div className="container containerHome">
                     <div className="row gx-0">
                         <div className="col-lg-6 colAbout">
@@ -68,7 +68,7 @@ function Home() {
                                 <h1>Saznajte više <br /><span>o nama</span></h1>
                                 <div className="aboutText">
                                     <h3>PO ČEMU SMO JEDINSTVENI</h3>
-                                    <p>Rico-plast  Živinice na prostorima BiH posluje već 20 godina, tijekom kojih se razvio u sistemu prodaje mašina za proizvodnju PVC i ALU mašina značajnim iskustvom u savjetovanju, razvoju i uvođenju. Fokusirani smo na razvoj dugoročne stolarije i održivih mašina. Pružamo kvalitetne proizvode uvežene iz Njemačke, Turske i drugih država.</p>
+                                    <p>Rico-plast, Živinice na prostorima BiH posluje već 20 godina, tijekom kojih se razvio u sistemu prodaje mašina za proizvodnju PVC i ALU mašina značajnim iskustvom u savjetovanju, razvoju i uvođenju. Fokusirani smo na razvoj dugoročne stolarije i održivih mašina. Pružamo kvalitetne proizvode uvežene iz Njemačke, Turske i drugih država.</p>
                                 </div>
                                 <div>
                                     <a className="btnAbout" href="mailto: rico-plast@gmail.com">Naručite proizvod</a>
@@ -84,7 +84,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="offer-area">
+            <section className="offer-area" id="offer-section">
                 <div className="container">
                     <div className="row gx-0 justifyCenter">
                         <div className="col-lg-6">
@@ -254,7 +254,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="row gx-0 justifyCenter">
+                    <div className="row gx-0 justifyCenter clientsRow">
                                 <div className="col-lg-3 col-md-6 columnClients">
                                     <div className="clientsBox">
                                         <a href="#">
@@ -355,7 +355,7 @@ function Home() {
                                 <p className="footerText">061 392 925</p>
                                 <p className="footerText">060 33 96 286</p>
                                 <p className="footerText">rico-plast@gmail.com</p>
-                                <a href="https://www.facebook.com/">
+                                <a href="https://www.facebook.com/Rico-plast-106317514411877">
                                     <FaFacebook className="social-media" />
                                 </a>
                                 <a href="https://www.instagram.com/">
