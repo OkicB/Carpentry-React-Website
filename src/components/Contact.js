@@ -21,17 +21,20 @@ const About = () => {
                         <div className="col-sm-4 articleContact">
                             <AiFillSetting className="commonIconsProducts commonIconsContact" />
                             <h5 className="contactHeader2">Posjetite nas</h5>
-                            <p>Edmund, 59 Downtown St, Melbourne Australia</p>
+                            <a href="https://goo.gl/maps/MyzWeNNrovGLmBxr6">III ulica, Živinice 75270, Bosna i Hercegovina</a>
                         </div>
                         <div className="col-sm-4 articleContact">
                             <AiFillSetting className="commonIconsProducts commonIconsContact" />
                             <h5 className="contactHeader2">Nazovite nas</h5>
-                            <p>Edmund, 59 Downtown St, Melbourne Australia</p>
+                            <p>064 41 74 841</p>
+                            <p>061 392 925</p>
+                            <p>060 33 96 286</p>
                         </div>
                         <div className="col-sm-4 articleContact">
                             <AiFillSetting className="commonIconsProducts commonIconsContact" />
                             <h5 className="contactHeader2">Pošaljite poruku</h5>
-                            <p>Edmund, 59 Downtown St, Melbourne Australia</p>
+                            <p>rico-plast@gmail.com</p>
+                            <a href="https://www.facebook.com/Rico-plast-106317514411877">Rico-plast</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +99,7 @@ const About = () => {
                                 <p className="footerText">061 392 925</p>
                                 <p className="footerText">060 33 96 286</p>
                                 <p className="footerText">rico-plast@gmail.com</p>
-                                <a href="https://www.facebook.com/">
+                                <a href="https://www.facebook.com/Rico-plast-106317514411877">
                                     <FaFacebook className="social-media" />
                                 </a>
                                 <a href="https://www.instagram.com/">
