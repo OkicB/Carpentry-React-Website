@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --primary-gold: #ffd700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +41,10 @@ body {
   background: rgb(156, 153, 153);
 }
 
+.navbar {
+  width: 100% !important;
+}
+
 /*************** MENU LINKS ***************/
 nav a.nav-link {
   font-weight: 500;
@@ -46,6 +54,12 @@ nav a.nav-link {
 
 nav ul li {
   text-transform: uppercase;
+}
+
+.navbar,
+.navbar-expand-lg {
+  width: 100% !important;
+  padding: 0.3rem 0 !important;
 }
 
 #navbarNav {
@@ -76,24 +90,53 @@ nav ul li {
   align-items: center !important;
 }
 
+.imgLogo img {
+  width: 5rem;
+  padding: 0.3rem !important;
+}
+
+.imgLogo {
+  margin-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navLink {
+  color: black;
+}
+
+.navLink:hover {
+  color: var(--primary-gold) !important;
+}
+
+.navbar-brand {
+  padding-left: 2rem;
+}
+
+.navbar-toggler {
+  color: var(--primary-gold) !important;
+  margin-right: 1rem !important;
+}
+
 /*************** HEADER ***************/
 
 .home-area {
   width: 100%;
   padding: 100px 0;
   color: rgb(0, 0, 0);
-  background: url("./1.jpg");
+  background: url("./rico1.png");
   background-position: center;
   background-size: cover;
+  /*border: 2rem solid rgb(255, 231, 126);*/
 }
 
-.homeCol {
-  background: #cfcfcf;
+.border {
+  border: none !important;
 }
 
 .border::before {
-  border-left: 4px solid #dceb0c !important;
-  border-top: 4px solid #dceb0c !important;
+  border-left: 4px solid var(--primary-gold) !important;
+  border-top: 4px solid var(--primary-gold) !important;
   top: 0 !important;
   width: 84% !important;
   height: 13% !important;
@@ -106,8 +149,8 @@ nav ul li {
 }
 
 .border::after {
-  border-left: 2px solid #dceb0c;
-  border-bottom: 2px solid #dceb0c;
+  border-left: 4px solid var(--primary-gold) !important;
+  border-bottom: 4px solid var(--primary-gold) !important;
   left: 16%;
   right: 60px;
   bottom: 0;
@@ -120,8 +163,14 @@ nav ul li {
 
 .carpentry-class {
   font-size: 96px !important;
-  color: #dceb0c;
+  color: var(--primary-gold) !important;
   font-weight: 700;
+}
+
+.ricoP {
+  font-size: 30px;
+  margin-bottom: 0 !important;
+  padding-left: 6rem;
 }
 
 .home-content {
@@ -136,10 +185,11 @@ nav ul li {
 
 .home-content h2 {
   font-weight: 300 !important;
+  margin-top: 0.6rem !important;
 }
 
 .home-content::before {
-  border-right: 2px solid #dceb0c;
+  border-right: 2px solid var(--primary-gold) !important;
   top: 0;
   right: 0;
   bottom: 60px;
@@ -149,7 +199,7 @@ nav ul li {
 }
 
 .home-content::after {
-  border-color: transparent transparent #dceb0c transparent;
+  border-color: transparent transparent var(--primary-gold) transparent !important;
   width: 0;
   height: 0;
   border-style: solid;
@@ -178,7 +228,7 @@ h2 {
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  background: #dceb0c !important;
+  background: var(--primary-gold) !important;
   color: #212121;
   padding: 1rem 2rem !important;
   font-size: 0.8rem !important;
@@ -190,7 +240,7 @@ h2 {
 }
 
 .button2:hover {
-  color: #dceb0c !important;
+  color: var(--primary-gold) !important;
   background: #212121 !important;
   transition: all 0.3s;
 }
@@ -344,7 +394,9 @@ h4 {
 
 /*************** ABOUT ***************/
 .about-area {
-  background: #dbdbdb;
+  /*  background: url("./rico1.png");
+  background-position: center;
+  background-size: cover;*/
   padding: 100px 0;
   color: rgb(0, 0, 0);
 }
@@ -365,7 +417,7 @@ h4 {
 }
 
 .aboutTitle span {
-  background: #baff00;
+  background: var(--primary-gold) !important;
   padding: 0 10px;
   color: #222222;
   display: inline-block;
@@ -405,7 +457,7 @@ h4 {
 
 .btnAbout:hover {
   color: #000000 !important;
-  border: 4px solid #beca0f !important;
+  border: 4px solid var(--primary-gold) !important;
   transition: all 0.3s;
 }
 
@@ -435,7 +487,7 @@ a {
 
 .aboutImage img {
   height: 40rem;
-  width: 100%;
+  width: 80%;
 }
 
 .aboutImage {
@@ -448,7 +500,9 @@ a {
 
 /*************** SERVICES ***************/
 .offer-area {
-  background: #f0f0f0;
+  background: url("./components/services1.png");
+  background-position: center;
+  background-size: cover;
   padding: 100px 0;
   color: rgb(0, 0, 0) !important;
   justify-content: center;
@@ -518,7 +572,7 @@ h3 {
 }
 
 .columnModal img {
-  width: 50%;
+  width: 70%;
 }
 
 .machine {
@@ -534,7 +588,7 @@ h3 {
   border: none;
   padding: 0 0.8rem;
   float: right;
-  background: #dceb0c;
+  background: var(--primary-gold);
   font-size: 2rem;
 }
 
@@ -542,7 +596,9 @@ h3 {
 .products-area {
   padding: 100px 0;
   color: rgb(0, 0, 0);
-  background: #e6dcdc;
+  background: url("./components/products1.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .line {
@@ -595,7 +651,9 @@ h3 {
 .clients-area {
   padding: 100px 0;
   color: rgb(0, 0, 0);
-  background: #e6e4d4;
+  background: url("./components/clients1.png");
+  background-position: center;
+  background-size: cover;
 }
 .clientsBox {
   display: flex;
@@ -617,7 +675,9 @@ h3 {
 .form-area {
   padding: 100px 0;
   color: rgb(0, 0, 0);
-  background: #e7e5db;
+  background: url("./components/contact1.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .contactForm {
@@ -701,7 +761,7 @@ input {
 }
 
 .listItem:hover {
-  color: #b1e917 !important;
+  color: var(--primary-gold) !important;
   transition: all 0.8s !important;
 }
 
@@ -724,14 +784,18 @@ input {
   letter-spacing: 0.2rem;
 }
 
-/*************** FOOTER ***************/
+/*************** PRODUCTS PAGE ***************/
 .products-page {
   width: 100%;
   padding: 100px 0;
   color: rgb(0, 0, 0);
-  background: url("./1.jpg");
+  background: url("./rico1.png");
   background-position: center;
   background-size: cover;
+}
+
+.allProducts {
+  background: rgb(155, 155, 155);
 }
 
 .productH3 {
@@ -787,7 +851,7 @@ input {
 }
 
 .productsContent span {
-  background: #baff00;
+  background: var(--primary-gold) !important;
   padding: 0 10px;
   color: #222222;
   display: inline-block;
@@ -812,7 +876,7 @@ input {
 .commonIconsProducts {
   font-size: 5rem;
   /*color: white;*/
-  color: #baff00;
+  color: var(--primary-gold) !important;
 }
 
 .productsImg1,
@@ -849,7 +913,7 @@ input {
 }
 
 .productHeader2 {
-  background: #baff00;
+  background: var(--primary-gold);
   padding: 1rem;
   color: #222222;
   display: inline-block;
@@ -861,12 +925,13 @@ input {
   margin-bottom: 8rem;
 }
 
+/*************** ABOUT PAGE ***************/
 .about-header h3 {
   padding: 4rem 0;
 }
 
 .aboutRow::before {
-  background: #dceb0c;
+  background: var(--primary-gold);
   bottom: 0;
   content: "";
   display: block;
@@ -891,7 +956,7 @@ input {
   text-align: center;
   top: 15px;
   width: 40px;
-  background: #dceb0c;
+  background: var(--primary-gold);
 }
 
 .article h3 {
@@ -983,6 +1048,7 @@ input {
   top: 24px;
 }
 
+/*************** CONTACT PAGE ***************/
 .contacts-page {
   padding: 100px 0;
 }
@@ -1012,7 +1078,7 @@ input {
 }
 
 .copyrightRow {
-  background: #b1e917;
+  background: var(--primary-gold);
   width: 100%;
   color: #5a5a5a;
 }
@@ -1023,6 +1089,11 @@ input {
   color: #000000;
 }
 
+.logo {
+  width: 7rem;
+}
+
+/*************** MEDIA DEVICES ***************/
 @media (max-width: 765px) {
   .items1 {
     margin-top: 2rem;
@@ -1112,5 +1183,32 @@ input {
   .productsImg4,
   .productsImg5 {
     display: none;
+  }
+
+  .aboutTitle h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .aboutText h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .linkColumn {
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .linkColumn2 {
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  .linkColumn h6,
+  .linkColumn2 h6 {
+    text-align: center !important;
+    margin-top: 2rem !important;
   }
 }
