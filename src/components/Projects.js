@@ -1,78 +1,12 @@
 import React, { useState } from 'react';
-import { FaFacebook, FaInstagram, FaArrowLeft, FaArrowRight, FaDoorClosed } from 'react-icons/fa';
-import { HiArrowNarrowRight } from 'react-icons/hi';
+import { FaDoorClosed } from 'react-icons/fa';
 import { AiFillSetting } from 'react-icons/ai';
 import { GiWindow } from 'react-icons/gi';
-import img1 from '../components/kompresori1.jpg';
-import img8 from '../components/wintech2.png';
-/*import img2 from '../components/kompresori2.jpg';
-import img3 from '../components/kompresori3.jpg';
-import img4 from '../components/kompresori4.jpg';
-import img5 from '../components/kompresori5.jpg';
-import img6 from '../components/mašine.jpg';
-import img7 from '../components/mašine1.jpg';
-import img8 from '../components/mašine2.jpg';
-import img9 from '../components/mašine3.jpg';
-import img10 from '../components/mašine4.jpg';
-import img11 from '../components/mašine5.jpg';
-import img12 from '../components/mašine6.jpg';
-import img13 from '../components/mašine7.jpg';
-import img14 from '../components/mašine8.jpg';
-import img15 from '../components/mašine9.jpg';
-import img16 from '../components/prozori1.jpg';
-import img17 from '../components/prozori2.jpg';
-import img18 from '../components/prozori3.jpg';
-import img19 from '../components/prozori4.jpg';
-import img20 from '../components/prozori5.jpg';
-import img21 from '../components/prozori6.jpg';
-import img22 from '../components/sobna1.jpg';
-import img23 from '../components/sobna2.jpg';
-import img24 from '../components/sobna3.jpg';
-import img25 from '../components/sobna4.jpg';
-import img26 from '../components/sobna5.jpg';
-import img27 from '../components/sobna6.jpg';
-import img28 from '../components/sobna7.jpg';
-import img29 from '../components/sobna8.jpg';
-import img30 from '../components/sobna9.jpg';
-import img31 from '../components/sobna10.jpg';
-import img32 from '../components/sobna11.jpg';
-import img33 from '../components/sobna12.jpg';
-import img34 from '../components/sobna13.jpg';
-import img35 from '../components/sobna14.jpg';
-import img36 from '../components/ulazna_vrata.jpg';
-import img37 from '../components/ulazna_vrata2.jpg';
-import img38 from '../components/ulazna1.jpg';
-import img39 from '../components/ulazna2.jpg';
-import img40 from '../components/ulazna3.jpg';
-import img41 from '../components/ulazna4.jpg';
-<div className="row gx-0">
-                        <div className="col-sm-12">
-                            <ul className="productsList">
-                                <li className="productItem">SVE</li>
-                                <li className="productItem">PVC/ALU mašine</li>
-                                <li className="productItem">Stolarija</li>
-                                <li className="productItem">Vrata</li>
-                                <li className="productItem">Kompresori</li>
-                            </ul>
-                        </div>
-                        <div className="col-sm-12">
-                            <div className="row gx-0">
-                                <a className="col-md-4 col-sm-4 col-xs-6">
-                                    <img className="productsImg" src={img1} />
-                                    <div className="hiddenItemContent">
-                                        <span>Mašina</span>
-                                        <h6>PVC/ALU mašina cnc</h6>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-*/
 
 const Projects = () => {
     return (
-        <>
-            <section className="products-page" id="projects">
+        <div className="allProducts">
+            <section className="products-page" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0" id="projects">
                 <div className="container">
                     <div className="row gx-0">
                         <div className="headerRow">
@@ -82,7 +16,7 @@ const Projects = () => {
                 </div>
             </section>
             
-            <section className="products-section3">
+            <section className="products-section3" data-aos="fade-down">
                 <div className="productsImg1"></div>
                 <div className="square"></div>
                 <div className="container productsContainer">
@@ -97,7 +31,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-            <section className="products-section3">
+            <section className="products-section3" data-aos="fade-down">
                 <div className="productsImg2"></div>
                 <div className="square"></div>
                 <div className="container">
@@ -112,7 +46,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-            <section className="products-section3">
+            <section className="products-section3" data-aos="fade-down">
                 <div className="productsImg3"></div>
                 <div className="square"></div>
                 <div className="container">
@@ -127,7 +61,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-            <section className="products-section3">
+            <section className="products-section3" data-aos="fade-down">
                 <div className="productsImg4"></div>
                 <div className="square"></div>
                 <div className="container">
@@ -142,7 +76,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-            <section className="products-section3 last-productSection">
+            <section className="products-section3 last-productSection" data-aos="fade-down">
                 <div className="productsImg5"></div>
                 <div className="square"></div>
                 <div className="container">
@@ -157,53 +91,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-            <footer className="footer-area">
-                <div className="container">
-                    <div className="row gx-0 justifyCenter">
-                        <div className="col-lg-4">
-                            <div className="logoFooter">
-                                <a href="#">
-                                    <img className="logo" src={img8}/>
-                                </a>
-                            </div>
-                            <p className="footerText footerText1">Provjerite naše proizvode, vjerovatno ćete naći nešto što Vam odgovara. Poštujemo dogovor, zahtjeve kupca i investitora. Poštujemo rokove, izvodimo radove kvalitetno, koristimo kvalitetne materijale. Radimo brzo!</p>
-                        </div>
-                        <div className="col-lg-4 linkColumn">
-                            <h6 className="contactText">NAŠE STRANICE</h6>
-                            <ul className="footerList">
-                                <li><a href="#" className="listItem">Početna</a></li>
-                                <li><a href="#" className="listItem">Proizvodi</a></li>
-                                <li><a href="#" className="listItem">O nama</a></li>
-                                <li><a href="#" className="listItem">Kontakt</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-3 linkColumn2">
-                            <h6 className="contactText">KONTAKT INFO</h6>
-                            <div className="textFooterList">
-                                <p className="footerText">Živinice, Bosna i Hercegovina</p>
-                                <p className="footerText">064 41 74 841</p>
-                                <p className="footerText">061 392 925</p>
-                                <p className="footerText">060 33 96 286</p>
-                                <p className="footerText">rico-plast@gmail.com</p>
-                                <a href="https://www.facebook.com/Rico-plast-106317514411877">
-                                    <FaFacebook className="social-media" />
-                                </a>
-                                <a href="https://www.instagram.com/">
-                                    <FaInstagram className="social-media" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <section className="copyright-section">
-                    <div className="row gx-0 copyrightRow">
-                        <div className="col-lg-12">
-                            <p className="copyright-text">By Programmer: Bekir Okić</p>
-                        </div>
-                    </div>
-            </section>
-        </>
+        </div>
     )
 }
 
