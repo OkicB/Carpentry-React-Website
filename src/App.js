@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Footer from './components/Footer';
 //scroll to top
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/contact" component={Contact}/>
         </Switch>
       </Router>
+      <Footer />
     </>
   );
 }
