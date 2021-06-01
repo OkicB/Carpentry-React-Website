@@ -885,31 +885,32 @@ input {
 .productsImg4,
 .productsImg5 {
   position: absolute;
-  width: 50%;
-  height: 100%;
+  width: 50rem;
+  height: 35rem;
   left: 0 !important;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
 
 .productsImg1 {
-  background: url("./components/mašine9.jpg");
+  background: url("./components/mašine10.jpg");
 }
 
 .productsImg2 {
-  background: url("./components/roba1.jpg");
+  background: url("./components/prozori2.jpg");
 }
 
 .productsImg3 {
-  background: url("./components/ulazna_vrata.jpg");
+  background: url("./components/ulazna_vrata2.jpg");
 }
 
 .productsImg4 {
-  background: url("./components/sobna4.jpg");
+  background: url("./components/sobna5.jpg");
 }
 
 .productsImg5 {
-  background: url("./components/kompresori2.jpg");
+  background: url("./components/kompresori3.jpg");
 }
 
 .productHeader2 {
