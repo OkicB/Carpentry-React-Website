@@ -6,7 +6,7 @@ import { AiFillSetting } from 'react-icons/ai';
 import { GiWindow } from 'react-icons/gi';
 import imgLogo from '../components/logo.png';
 
-const About = () => {
+const Contact = () => {
     return (
         <>
             <section className="contacts-page" id="contact">
@@ -74,4 +74,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Contact
