@@ -3,10 +3,10 @@ import { FaFacebook, FaInstagram, FaArrowLeft, FaArrowRight, FaDoorClosed } from
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { AiFillSetting } from 'react-icons/ai';
 import { GiWindow } from 'react-icons/gi';
-import img from '../components/2.jpg';
+import img from '../components/aboutImg.jpg';
 import Carousel from "react-elastic-carousel";
-import Popup from './Popup';
 import Modal from 'react-modal';
+import imgLogo from '../components/logo.png';
 
 import img1 from '../components/mašine.jpg';
 import img2 from '../components/proizvodi.jpg';
@@ -15,10 +15,44 @@ import img4 from '../components/ulazna_vrata2.jpg';
 import img5 from '../components/rico_plast.jpg';
 
 import img6 from '../components/sawin.png';
-import img7 from '../components/teknik.png';
+import img7 from '../components/stokprom.jpg';
 import img8 from '../components/wintech2.png';
 import img9 from '../components/europen.png';
 import img10 from '../components/dalgakiran.png';
+
+import imgMasine from '../components/mašine1.jpg';
+import imgMasine2 from '../components/mašine2.jpg';
+import imgMasine3 from '../components/mašine3.jpg';
+import imgMasine4 from '../components/mašine4.jpg';
+import imgMasine5 from '../components/mašine6.jpg';
+import imgMasine6 from '../components/mašine7.jpg';
+
+import imgStolarija1 from '../components/roba1.jpg';
+import imgStolarija2 from '../components/roba2.jpg';
+import imgStolarija3 from '../components/sobna10.jpg';
+import imgStolarija4 from '../components/sobna11.jpg';
+import imgStolarija5 from '../components/sobna12.jpg';
+import imgStolarija6 from '../components/sobna13.jpg';
+
+import imgSobna1 from '../components/sobna2.jpg';
+import imgSobna2 from '../components/sobna3.jpg';
+import imgSobna3 from '../components/sobna5.jpg';
+import imgSobna4 from '../components/sobna9.jpg';
+import imgSobna5 from '../components/sobna10.jpg';
+import imgSobna6 from '../components/sobna13.jpg';
+
+import imgUlazna1 from '../components/ulazna1.jpg';
+import imgUlazna2 from '../components/ulazna2.jpg';
+import imgUlazna3 from '../components/ulazna3.jpg';
+import imgUlazna4 from '../components/ulazna4.jpg';
+import imgUlazna5 from '../components/ulazna_vrata.jpg';
+import imgUlazna6 from '../components/ulazna_vrata2.jpg';
+
+import imgKompresori1 from '../components/kompresori1.jpg';
+import imgKompresori2 from '../components/kompresori3.jpg';
+import imgKompresori3 from '../components/kompresori4.jpg';
+import imgKompresori4 from '../components/kompresori5.jpg';
+import imgKompresori5 from '../components/kompresori2.jpg';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -40,12 +74,13 @@ function Home() {
     const handleClose5 = () => setModalIsOpen5(false);
     return (
         <>
-            <section className="home-area" id="home">
+            <section data-aos="fade-right" className="home-area" id="home">
                 <div className="container">
                     <div className="row gx-0">
-                        <div className="col-md-5 col-sm-6 homeCol">
+                        <div className="col-md-5 col-sm-6">
                             <div className="border">
                             <div className="home-content">
+                                <p className="ricoP">RICO PLAST</p>
                                 <h2>Kvalitet PVC <span className="carpentry-class">Stolarije</span></h2>
                                 <div className="home-button-field">
                                     <a className="btn button2" href="#about-section">Saznajte više</a>
@@ -76,7 +111,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-lg-6 colAbout">
-                            <div data-aos="fade-right" className="aboutImage">
+                            <div data-aos="fade-up" className="aboutImage">
                                 <img src={img} />
                             </div>
                         </div>
@@ -85,7 +120,7 @@ function Home() {
             </section>
 
             <section className="offer-area" id="offer-section">
-                <div className="container">
+                <div data-aos="fade-down" className="container">
                     <div className="row gx-0 justifyCenter">
                         <div className="col-lg-6">
                             <div className="offerTitle">
@@ -96,7 +131,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="container containerHome">
+                <div data-aos="fade-up" className="container containerHome">
                     <div className="row gx-0 justifyCenter">
                         <div className="col-lg-4 col-md-6 columnServices">
                             <div className="servicesBox" onClick={() => setModalIsOpen(true)}>
@@ -107,15 +142,15 @@ function Home() {
                             <Modal isOpen={modalIsOpen}>
                                 <button className="modalButton" onClick={handleClose}>X</button>
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine3}/></div>
                                 </div>
 
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine6}/></div>
                                 </div>
                             </Modal>
                         </div>
@@ -129,15 +164,15 @@ function Home() {
                             <Modal isOpen={modalIsOpen2}>
                                 <button className="modalButton" onClick={handleClose2}>X</button>
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgStolarija1}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgStolarija2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgStolarija3}/></div>
                                 </div>
 
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img3}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgStolarija4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgStolarija5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgStolarija6}/></div>
                                 </div>
                             </Modal>
                         </div>
@@ -151,15 +186,15 @@ function Home() {
                             <Modal isOpen={modalIsOpen3}>
                                 <button className="modalButton" onClick={handleClose3}>X</button>
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgUlazna1}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgUlazna2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgUlazna3}/></div>
                                 </div>
 
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgUlazna4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgUlazna5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgUlazna6}/></div>
                                 </div>
                             </Modal>
                         </div>
@@ -173,15 +208,15 @@ function Home() {
                             <Modal isOpen={modalIsOpen4}>
                                 <button className="modalButton" onClick={handleClose4}>X</button>
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna1}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna3}/></div>
                                 </div>
 
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna5}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna6}/></div>
                                 </div>
                             </Modal>
                         </div>
@@ -195,15 +230,14 @@ function Home() {
                             <Modal isOpen={modalIsOpen5}>
                                 <button className="modalButton" onClick={handleClose5}>X</button>
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgKompresori1}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgKompresori2}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgKompresori3}/></div>
                                 </div>
 
                                 <div className="row gx-0 justifyCenter">
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
-                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={img6}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgKompresori4}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgKompresori5}/></div>
                                 </div>
                             </Modal>
                         </div>
@@ -217,7 +251,7 @@ function Home() {
                         <div className="line"></div>
                     </div>
                     <div className="row gx-0 justifyCenter">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" data-aos="fade-down-right">
                             <div className="offerTitle">
                                 <h6 className="heading">KOMPLETIRANO</h6>
                                 <h3 className="productHeader">Naši proizvodi</h3>
@@ -225,7 +259,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="container">
+                <div className="container" data-aos="fade-right">
                     <div className="row gx-0 justifyCenter">
                         <div className="col-lg-12 col-md-6 columnServices">
                             <div className="productBox">
@@ -247,14 +281,14 @@ function Home() {
             <section className="clients-area">
                 <div className="container">
                     <div className="row gx-0 justifyCenter">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" data-aos="flip-down">
                             <div className="offerTitle">
                                 <h6 className="heading">NAŠI KLIJENTI</h6>
                                 <h3 className="productHeader">Kompanije s kojima radimo</h3>
                             </div>
                         </div>
                     </div>
-                    <div className="row gx-0 justifyCenter clientsRow">
+                    <div className="row gx-0 justifyCenter clientsRow" data-aos="fade-up">
                                 <div className="col-lg-3 col-md-6 columnClients">
                                     <div className="clientsBox">
                                         <a href="#">
@@ -297,7 +331,7 @@ function Home() {
             <section className="form-area">
                 <div className="container">
                     <div className="row gx-0 justifyCenter">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" data-aos="fade-up">
                             <div className="offerTitle">
                                 <h6 className="heading">POSJETITE NAS</h6>
                                 <h3 className="productHeader">Kontaktirajte za više informacija</h3>
@@ -305,7 +339,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="row gx-0 justifyCenter">
-                        <div className="col-lg-6 col-md-6">
+                        <div className="col-lg-6 col-md-6" data-aos="fade-up">
                             <form className="form">
                                         <div className="col-md-6 col-sm-6 colInput">
                                             <input type="text" placeholder="Unesite Ime i Prezime" name="name" className="contactForm" required="true" />
@@ -321,57 +355,11 @@ function Home() {
                                         </div>                              
                             </form>
                         </div>
-                        <div className="col-lg-5 col-md-6 map">
+                        <div className="col-lg-5 col-md-6 map" data-aos="fade-up">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11394.80386282076!2d18.6578459!3d44.4392959!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb181ab963ba7d457!2sRICO%20PLAST%20DOO!5e0!3m2!1sbs!2sba!4v1621430974778!5m2!1sbs!2sba" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
-            </section>
-            <footer className="footer-area">
-                <div className="container">
-                    <div className="row gx-0 justifyCenter">
-                        <div className="col-lg-4">
-                            <div className="logoFooter">
-                                <a href="#">
-                                    <img className="logo" src={img8}/>
-                                </a>
-                            </div>
-                            <p className="footerText footerText1">Provjerite naše proizvode, vjerovatno ćete naći nešto što Vam odgovara. Poštujemo dogovor, zahtjeve kupca i investitora. Poštujemo rokove, izvodimo radove kvalitetno, koristimo kvalitetne materijale. Radimo brzo!</p>
-                        </div>
-                        <div className="col-lg-4 linkColumn">
-                            <h6 className="contactText">NAŠE STRANICE</h6>
-                            <ul className="footerList">
-                                <li><a href="#" className="listItem">Početna</a></li>
-                                <li><a href="#" className="listItem">Proizvodi</a></li>
-                                <li><a href="#" className="listItem">O nama</a></li>
-                                <li><a href="#" className="listItem">Kontakt</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-3 linkColumn2">
-                            <h6 className="contactText">KONTAKT INFO</h6>
-                            <div className="textFooterList">
-                                <p className="footerText">Živinice, Bosna i Hercegovina</p>
-                                <p className="footerText">064 41 74 841</p>
-                                <p className="footerText">061 392 925</p>
-                                <p className="footerText">060 33 96 286</p>
-                                <p className="footerText">rico-plast@gmail.com</p>
-                                <a href="https://www.facebook.com/Rico-plast-106317514411877">
-                                    <FaFacebook className="social-media" />
-                                </a>
-                                <a href="https://www.instagram.com/">
-                                    <FaInstagram className="social-media" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <section className="copyright-section">
-                    <div className="row gx-0 copyrightRow">
-                        <div className="col-lg-12">
-                            <p className="copyright-text">By Programmer: Bekir Okić</p>
-                        </div>
-                    </div>
             </section>
         </>
     )
