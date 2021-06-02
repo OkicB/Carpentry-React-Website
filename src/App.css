@@ -22,11 +22,11 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: rgb(8, 212, 185);
+  background-color: var(--primary-gold);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(2, 151, 170);
+  background-color: #686036;
 }
 
 body {
@@ -262,21 +262,6 @@ h2 {
   color: #7a7a7a;
 }
 
-.row1 {
-  background: url("./1.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 35rem;
-  margin-right: 0;
-}
-
-@media (max-width: 765px) {
-  .row1 {
-    height: 10rem;
-    width: 100% !important;
-  }
-}
-
 .row {
   width: 100%;
 }
@@ -498,6 +483,15 @@ a {
   position: relative;
 }
 
+.modalBox {
+  display: block;
+  height: 5px !important;
+  margin-top: 5rem !important;
+  position: absolute !important;
+  top: 200px !important;
+  z-index: 105 !important;
+}
+
 /*************** SERVICES ***************/
 .offer-area {
   background: url("./components/services1.png");
@@ -587,6 +581,7 @@ h3 {
 .modalButton {
   border: none;
   padding: 0 0.8rem;
+  margin-top: 3rem;
   float: right;
   background: var(--primary-gold);
   font-size: 2rem;
@@ -801,14 +796,6 @@ input {
 .productH3 {
   padding: 10rem 0 4rem 0;
   font-weight: 800;
-}
-
-.products-section1 {
-  padding: 100px 0;
-  width: 100%;
-  background: url("./1.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .products-section3 {
@@ -1143,6 +1130,11 @@ input {
 
   .aboutImage {
     margin-left: 0;
+  }
+
+  .aboutImage img {
+    width: 100% !important;
+    height: 35rem;
   }
 
   .linkColumn {
