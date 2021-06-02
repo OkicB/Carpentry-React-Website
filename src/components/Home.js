@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaFacebook, FaInstagram, FaArrowLeft, FaArrowRight, FaDoorClosed } from 'react-icons/fa';
+import { FaDoorClosed } from 'react-icons/fa';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { AiFillSetting } from 'react-icons/ai';
 import { GiWindow } from 'react-icons/gi';
@@ -20,12 +20,15 @@ import img8 from '../components/wintech2.png';
 import img9 from '../components/europen.png';
 import img10 from '../components/dalgakiran.png';
 
-import imgMasine from '../components/mašine1.jpg';
-import imgMasine2 from '../components/mašine2.jpg';
-import imgMasine3 from '../components/mašine3.jpg';
-import imgMasine4 from '../components/mašine4.jpg';
-import imgMasine5 from '../components/mašine6.jpg';
-import imgMasine6 from '../components/mašine7.jpg';
+import imgMasine from '../components/mašina1.jpg';
+import imgMasine2 from '../components/mašina2.jpg';
+import imgMasine3 from '../components/mašina3.jpg';
+import imgMasine4 from '../components/mašina4.jpg';
+import imgMasine5 from '../components/mašina5.jpg';
+import imgMasine6 from '../components/mašina6.jpg';
+import imgMasine7 from '../components/mašina7.jpg';
+import imgMasine8 from '../components/mašina8.jpg';
+import imgMasine9 from '../components/mašina9.jpg';
 
 import imgStolarija1 from '../components/roba1.jpg';
 import imgStolarija2 from '../components/roba2.jpg';
@@ -40,6 +43,12 @@ import imgSobna3 from '../components/sobna5.jpg';
 import imgSobna4 from '../components/sobna9.jpg';
 import imgSobna5 from '../components/sobna10.jpg';
 import imgSobna6 from '../components/sobna13.jpg';
+import imgSobna7 from '../components/sobna15.jpg';
+import imgSobna8 from '../components/sobna16.png';
+import imgSobna9 from '../components/sobna17.jpg';
+import imgSobna10 from '../components/sobna18.jpg';
+import imgSobna11 from '../components/sobna19.jpg';
+import imgSobna12 from '../components/sobna20.jpg';
 
 import imgUlazna1 from '../components/ulazna1.jpg';
 import imgUlazna2 from '../components/ulazna2.jpg';
@@ -139,7 +148,7 @@ function Home() {
                                 <div className="servicesBoxHeader">PVC/ALU MAŠINE CNC</div>
                                 <div className="servicesBoxPara">U našoj punudi možete pronaći jednoglavne i dvoglavne mašine.</div>
                             </div>
-                            <Modal isOpen={modalIsOpen}>
+                            <Modal dialogClassName="modalBox" isOpen={modalIsOpen} >
                                 <button className="modalButton" onClick={handleClose}>X</button>
                                 <div className="row gx-0 justifyCenter">
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine}/></div>
@@ -152,6 +161,11 @@ function Home() {
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine5}/></div>
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine6}/></div>
                                 </div>
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine7}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine8}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgMasine9}/></div>
+                                </div>
                             </Modal>
                         </div>
                             
@@ -161,7 +175,7 @@ function Home() {
                                 <div className="servicesBoxHeader">PVC STOLARIJA</div>
                                 <div className="servicesBoxPara">Stolarija nezaboravne kvalitete i složene strukture.</div>
                             </div>
-                            <Modal isOpen={modalIsOpen2}>
+                            <Modal isOpen={modalIsOpen2} dialogClassName="modalBox">
                                 <button className="modalButton" onClick={handleClose2}>X</button>
                                 <div className="row gx-0 justifyCenter">
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgStolarija1}/></div>
@@ -183,7 +197,7 @@ function Home() {
                                 <div className="servicesBoxHeader">ULAZNA VRATA</div>
                                 <div className="servicesBoxPara">Jungmeister ulazna vrata sa modelima za svačiji ukus.</div>
                             </div>
-                            <Modal isOpen={modalIsOpen3}>
+                            <Modal isOpen={modalIsOpen3} dialogClassName="modalBox">
                                 <button className="modalButton" onClick={handleClose3}>X</button>
                                 <div className="row gx-0 justifyCenter">
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgUlazna1}/></div>
@@ -205,7 +219,7 @@ function Home() {
                                 <div className="servicesBoxHeader">SOBNA VRATA</div>
                                 <div className="servicesBoxPara">Vrata sa kreativnim dizajnom po svjetskim trendovima.</div>
                             </div>
-                            <Modal isOpen={modalIsOpen4}>
+                            <Modal isOpen={modalIsOpen4} dialogClassName="modalBox">
                                 <button className="modalButton" onClick={handleClose4}>X</button>
                                 <div className="row gx-0 justifyCenter">
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna1}/></div>
@@ -218,6 +232,16 @@ function Home() {
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna5}/></div>
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna6}/></div>
                                 </div>
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna7}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna8}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna9}/></div>
+                                </div>
+                                <div className="row gx-0 justifyCenter">
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna10}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna11}/></div>
+                                    <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgSobna12}/></div>
+                                </div>
                             </Modal>
                         </div>
 
@@ -227,7 +251,7 @@ function Home() {
                                 <div className="servicesBoxHeader">KOMPRESORI</div>
                                 <div className="servicesBoxPara">Dizajnirani da bez problema služe kupcima dugo godina.</div>
                             </div>
-                            <Modal isOpen={modalIsOpen5}>
+                            <Modal isOpen={modalIsOpen5} dialogClassName="modalBox">
                                 <button className="modalButton" onClick={handleClose5}>X</button>
                                 <div className="row gx-0 justifyCenter">
                                     <div className="col-lg-3 col-md-6 columnModal"><img className="imgModal" src={imgKompresori1}/></div>
