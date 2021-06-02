@@ -1,10 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import img from '../components/2.jpg';
-import { HiArrowNarrowRight } from 'react-icons/hi';
-import { AiFillSetting } from 'react-icons/ai';
-import { GiWindow } from 'react-icons/gi';
-import imgLogo from '../components/logo.png';
+import { AiFillSetting, AiFillPhone, AiFillMessage } from 'react-icons/ai';
+import { MdLocationOn } from 'react-icons/md';
 
 const Contact = () => {
     return (
@@ -19,19 +15,19 @@ const Contact = () => {
                     </div>
                     <div className="row gx-0">
                         <div className="col-sm-4 articleContact" data-aos="fade-down">
-                            <AiFillSetting className="commonIconsProducts commonIconsContact" />
+                            <MdLocationOn className="commonIconsProducts commonIconsContact" />
                             <h5 className="contactHeader2">Posjetite nas</h5>
                             <a href="https://goo.gl/maps/MyzWeNNrovGLmBxr6">III ulica, Živinice 75270, Bosna i Hercegovina</a>
                         </div>
                         <div className="col-sm-4 articleContact" data-aos="fade-down">
-                            <AiFillSetting className="commonIconsProducts commonIconsContact" />
+                            <AiFillPhone className="commonIconsProducts commonIconsContact" />
                             <h5 className="contactHeader2">Nazovite nas</h5>
                             <p>064 41 74 841</p>
                             <p>061 392 925</p>
                             <p>060 33 96 286</p>
                         </div>
                         <div className="col-sm-4 articleContact" data-aos="fade-down">
-                            <AiFillSetting className="commonIconsProducts commonIconsContact" />
+                            <AiFillMessage className="commonIconsProducts commonIconsContact" />
                             <h5 className="contactHeader2">Pošaljite poruku</h5>
                             <p>rico-plast@gmail.com</p>
                             <a href="https://www.facebook.com/Rico-plast-106317514411877">Rico-plast</a>
