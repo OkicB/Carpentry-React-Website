@@ -1,6 +1,7 @@
 import React from 'react';
 import imgLogo from '../components/logo.png';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
@@ -19,10 +20,10 @@ const Footer = () => {
                         <div className="col-lg-4 linkColumn">
                             <h6 className="contactText">NAŠE STRANICE</h6>
                             <ul className="footerList">
-                                <li><a href="#" className="listItem">Početna</a></li>
-                                <li><a href="#" className="listItem">Proizvodi</a></li>
-                                <li><a href="#" className="listItem">O nama</a></li>
-                                <li><a href="#" className="listItem">Kontakt</a></li>
+                                <li><a href="#home" className="listItem"><Link to="./#home">Početna</Link></a></li>
+                                <li><a href="#projects" className="listItem"><Link to='./Projects#projects'>Proizvodi</Link></a></li>
+                                <li><a href="#about" className="listItem"><Link to='./About#about'>O nama</Link></a></li>
+                                <li><a href="#contact" className="listItem"><Link to='./Contact#contact'>Kontakt</Link></a></li>
                             </ul>
                         </div>
                         <div className="col-lg-3 linkColumn2">
